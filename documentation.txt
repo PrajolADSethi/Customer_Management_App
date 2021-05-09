@@ -51,3 +51,14 @@ Part 4 : Static files and images
 5. link the css js files in the html
 6. include media url in settings
 7. use image src and can link the image link in that
+
+Part 5: Database models and admin panel
+1. run migrate cmd
+2. create superuser to access django admin
+3. create models
+ ---class
+   ---queries functions
+4. in models we are basically creting the tables and fields so that we can store the dynamic data
+5. till now we saw about creating class importing models in it the creating the fields use of  null auto created fields like date then we saw a st fn which can be use to rename objects on the django admin
+6. next we saw about creating the choices for which we create a tuple I guess dictionary can also be used
+7. in admin import the models and in that call all the classes using (admin.site.register(Model_ClassName))
