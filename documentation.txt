@@ -29,3 +29,25 @@ Part 3 : Template and inheritence
    ---then include property for including repetaive codes like navbar in main
    ---{% block content %}{% endblock %}
    ---{% extends/include 'location of html file in the templates folder' %}
+5. Used bootstrap for page stucturing and design
+6. attach cdn links in the main template file inorder to inherit the css and js properties
+7. row
+   --col (sm md lg /-6 -8 etc)
+     --div (cards )
+     --div (cards)
+       -- tables
+8. inline css
+9. its all about giving properties inside a class or id
+10. other is to make separate css and js files  and link to the html files
+
+Part 4 : Static files and images
+1. create a static folder inside the local repository
+--customer_Management_App
+  --cma
+    -- static
+2. create css js and media folders
+3. settings configuration: join static dir to the base ( STATICFILES_DIR[=os.path.join(BASE_DIR,'static')])
+4. load the static in the required parent and included html files only as child html will inherit the property from its parent html
+5. link the css js files in the html
+6. include media url in settings
+7. use image src and can link the image link in that
