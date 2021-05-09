@@ -1,12 +1,12 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return HttpResponse('home')
+    return render(request,'accounts/dashboard.html')
 
 def product(request):
-    return HttpResponse('product')
+    return render(request,'accounts/products.html')
 
 def customer(request):
-    return HttpResponse('customer')
+    return render(request,'accounts/customer.html')
