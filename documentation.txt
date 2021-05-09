@@ -12,11 +12,20 @@ Part 1 : Basic configuration
 6. start project
 7. cd into project
 8. start app (new command : python manage.py startapp appname)
-9. add the app name inthe settings
+9. add the app name in the settings
 
 
 Part 2: views and urls
 1. make a url file in the app
 2. in the project url we will use the include function and include the app in the path
 3. in the views : make the view functions for the required pages which you want
-4. in the app url : create paths and in that call the views which you need to route 
+4. in the app url : create paths and in that call the views which you need to route
+
+Part 3 : Template and inheritence
+1. created a template folder with a sub app folder inside it containing the html files in it
+2. urls already linked to the views  (create dir in the settings file)
+3. create vies for template using the render function
+4. created html and used template taggings extend in order to extend parent html in child html
+   ---then include property for including repetaive codes like navbar in main
+   ---{% block content %}{% endblock %}
+   ---{% extends/include 'location of html file in the templates folder' %}
