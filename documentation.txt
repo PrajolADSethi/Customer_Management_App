@@ -58,7 +58,12 @@ Part 5: Database models and admin panel
 3. create models
  ---class
    ---queries functions
-4. in models we are basically creting the tables and fields so that we can store the dynamic data
+4. in models we are basically creating the tables and fields so that we can store the dynamic data
 5. till now we saw about creating class importing models in it the creating the fields use of  null auto created fields like date then we saw a st fn which can be use to rename objects on the django admin
 6. next we saw about creating the choices for which we create a tuple I guess dictionary can also be used
 7. in admin import the models and in that call all the classes using (admin.site.register(Model_ClassName))
+
+Part 6 : One to many and many to many relationships :
+1. use foreignkey function inorder to import properties of a parent model class in child
+2. in ForeignKey we use (on_delete = models.SET_NULL): inorder to preserve the data structure because if the parent data is deleted then their will be no sense to show the other data linked to it
+3. many to many functions and one to many functions  
