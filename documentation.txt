@@ -66,4 +66,7 @@ Part 5: Database models and admin panel
 Part 6 : One to many and many to many relationships :
 1. use foreignkey function inorder to import properties of a parent model class in child
 2. in ForeignKey we use (on_delete = models.SET_NULL): inorder to preserve the data structure because if the parent data is deleted then their will be no sense to show the other data linked to it
-3. many to many functions and one to many functions  
+3. many to many functions and one to many functions
+
+Part 7 : Queryset
+worked on several queries and properties refer the querycheatsheet.py
