@@ -78,3 +78,38 @@ Part 8 : Rendering data into the templates
 4. now in the templates we can use template tags two types :
 --- for condt / iteration  {{%  %}}
 --- for parsing data from var -- {{}}
+
+Part 9: Dynamic urls for customers
+1. so here we learnt about uing primary key becoz here every customer needs to see his own page but to do that we need to make urls Dynamic
+2. so use 'name/<str:pk>/' in the url
+3. in the views call pk too
+4. when rendering outside url you will also have to pass this id eg: {%'delete_order' item.id %}
+5. basic url linking
+
+Part 10 : CRUD operations
+1. we created a form.py import form from ModelForm and form from django.forms
+2. create a fn pass model form pass a subclass as meta in that call the required model and its field required for the forms
+3. urls create urls for create update and delete and UD with primaryKey
+4. now in views first import the form and then create three separate fns
+5. create a delete template to note to use csrf_token in the forms as it is for security purpose by django before sending data in the request POST GET method
+6. create fn :
+   -- render
+    --create context
+     --then use if for returning post
+       -- then check for validation of POST
+        -- save is post is valid
+           --redirect
+7. update fn :
+    -- render
+     --create context
+      --then use if for returning post
+        -- then check for validation of POST
+         -- create instance and then save for the following pk called
+            --redirect
+8. delete fn :
+      -- render
+       --create context
+        --then use if for returning post
+          -- then check for validation of POST
+           -- delete post is valid 
+              --redirect

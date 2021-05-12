@@ -45,4 +45,4 @@ class Order(models.Model):
     # order_id = models.IntegerField(null=True)
 
     def __str__(self):
-        return self.status
+        return self.product.name
