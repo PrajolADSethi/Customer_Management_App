@@ -70,3 +70,11 @@ Part 6 : One to many and many to many relationships :
 
 Part 7 : Queryset
 worked on several queries and properties refer the querycheatsheet.py
+
+Part 8 : Rendering data into the templates
+1. for rendering first we write the queryset in the views.py for every particular function
+2. import model into views
+3. call the created variables in the render fn also if their are multiple variables then make a dictionary throw all var in that and pass it in the render fn
+4. now in the templates we can use template tags two types :
+--- for condt / iteration  {{%  %}}
+--- for parsing data from var -- {{}}
