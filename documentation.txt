@@ -111,5 +111,14 @@ Part 10 : CRUD operations
        --create context
         --then use if for returning post
           -- then check for validation of POST
-           -- delete post is valid 
+           -- delete post is valid
               --redirect
+Part 11 : Inline Formset
+1. we converted create rder into dynmic too so that we can place orders directly from app for every customer with its id a pk
+2. do reqd changes in the MVT
+It is a form type present in forms library which is used to create multiple fields automatically
+1. import inlineformset_factory from django  forms in view
+2. created a new variable where we created the instance of customer
+3. {{formset.management_form}} used before for loop to manage the form fields created
+4. extra is used to create the reqd fields no
+5. none() - to display no data from the start
